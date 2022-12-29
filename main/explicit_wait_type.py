@@ -16,7 +16,6 @@ class ExplicitWaitType():
                        timeout=10, pollFrequency=0.5):
         element = None
         try:
-            self.driver.implicitly_wait(0)
             byType = self.hw.getByType(locatorType)
             print("Waiting for maximum :: " + str(timeout) +
                           " :: seconds for element to be visible")
@@ -29,5 +28,4 @@ class ExplicitWaitType():
         except:
             print("Element not appeared on the web page")
             print_stack()
-        self.driver.implicitly_wait(2)
         return element

@@ -9,7 +9,6 @@ class ExplicitWaitDemo2():
         baseUrl = "https://courses.letskodeit.com/"
         ff_service = Service(executable_path='../driver/geckodriver-v0.32.0-linux64/geckodriver')
         driver = webdriver.Firefox(service=ff_service)
-        driver.implicitly_wait(2)
         driver.maximize_window()
         driver.get(baseUrl)
 
