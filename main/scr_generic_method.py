@@ -20,8 +20,9 @@ class Click_Check():
 
     def take_screenshot(self,driver):
             filename=str(round(time.time()*1000))+".png"
-            scr_dir="/home/devslane-75/PycharmProjects/selenium_practise/scr"
+            scr_dir="/home/devslane-75/PycharmProjects/selenium_practise/scr/"
             destination_file=scr_dir+filename
+            print(destination_file)
             try:
                 driver.save_screenshot(destination_file)
                 print(f'file saved in dir : {scr_dir}')
